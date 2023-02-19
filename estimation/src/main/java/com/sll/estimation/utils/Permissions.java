@@ -1,4 +1,4 @@
-package com.sll.trajectoryestimation.utils;
+package com.sll.estimation.utils;
 
 import android.Manifest;
 import android.app.Activity;

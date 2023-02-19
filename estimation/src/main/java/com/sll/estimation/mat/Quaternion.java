@@ -1,4 +1,4 @@
-package com.sll.trajectoryestimation.mat;
+package com.sll.estimation.mat;
 
 /**
  * The Quaternion class. A Quaternion is a four-dimensional vector that is used to represent rotations of a rigid body

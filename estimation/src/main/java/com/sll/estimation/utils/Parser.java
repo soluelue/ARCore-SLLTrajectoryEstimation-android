@@ -1,9 +1,9 @@
-package com.sll.trajectoryestimation.utils;
+package com.sll.estimation.utils;
 
 import android.content.Context;
 import android.util.Log;
 
-import com.sll.trajectoryestimation.model.Trajectory;
+import com.sll.estimation.model.Trajectory;
 
 import java.io.BufferedReader;
 import java.io.IOException;

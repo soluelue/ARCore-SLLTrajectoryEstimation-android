@@ -1,4 +1,4 @@
-package com.sll.trajectoryestimation.model;
+package com.sll.estimation.model;
 
 import java.util.ArrayList;
 

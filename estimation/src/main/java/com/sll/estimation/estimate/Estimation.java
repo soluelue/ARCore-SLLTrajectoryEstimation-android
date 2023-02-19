@@ -1,11 +1,11 @@
-package com.sll.trajectoryestimation.estimate;
+package com.sll.estimation.estimate;
 
 import com.google.ar.core.Pose;
-import com.sll.trajectoryestimation.mat.MatrixF4x4;
-import com.sll.trajectoryestimation.mat.Quaternion;
-import com.sll.trajectoryestimation.mat.Vector3f;
-import com.sll.trajectoryestimation.model.Route;
-import com.sll.trajectoryestimation.model.Trajectory;
+import com.sll.estimation.mat.MatrixF4x4;
+import com.sll.estimation.mat.Quaternion;
+import com.sll.estimation.mat.Vector3f;
+import com.sll.estimation.model.Route;
+import com.sll.estimation.model.Trajectory;
 
 import java.util.ArrayList;
 
@@ -126,7 +126,6 @@ public class Estimation {
             deltaQ.normalise();
             quat.multiplyByQuat(deltaQ);
 
-            //todo: checking length error
             route.addCoordinate(keyTimes.get(i + 1), trans.getX(), trans.getY(), trans.getZ());
         }
 

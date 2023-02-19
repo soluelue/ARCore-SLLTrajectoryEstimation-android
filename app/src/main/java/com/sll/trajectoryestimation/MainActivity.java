@@ -7,12 +7,12 @@ import android.os.Environment;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.sll.trajectoryestimation.estimate.Estimation;
-import com.sll.trajectoryestimation.model.Route;
-import com.sll.trajectoryestimation.model.Trajectory;
-import com.sll.trajectoryestimation.utils.CSVWriter;
-import com.sll.trajectoryestimation.utils.Parser;
-import com.sll.trajectoryestimation.utils.Permissions;
+import com.sll.estimation.estimate.Estimation;
+import com.sll.estimation.model.Route;
+import com.sll.estimation.model.Trajectory;
+import com.sll.estimation.utils.CSVWriter;
+import com.sll.estimation.utils.Parser;
+import com.sll.estimation.utils.Permissions;
 
 import java.io.File;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.sll.trajectoryestimation.model;
+package com.sll.estimation.model;
 
 public class LatLng {
     private long timestamp;

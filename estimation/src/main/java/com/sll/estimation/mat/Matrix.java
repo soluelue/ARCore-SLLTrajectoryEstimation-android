@@ -1,4 +1,4 @@
-package com.sll.trajectoryestimation.mat;
+package com.sll.estimation.mat;
 
 /**
  * https://github.com/apacha/sensor-fusion-demo/tree/master/app/src/main/java/org/hitlabnz/sensor_fusion_demo/representation

@@ -1,4 +1,4 @@
-package com.sll.trajectoryestimation.mat;
+package com.sll.estimation.mat;
 
 /**
  * 3-dimensional vector with conventient getters and setters. Additionally this class is serializable and
