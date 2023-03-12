@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sll.estimation.estimate.Estimation;
@@ -48,8 +50,17 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, route.toString());
         Log.d(TAG, "------------------------------");
 
-        //show route
-        showGraph();
+        //////////// showing UI ////////////////
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Route.Coordinate coordinate : route.getRoute()){
+            stringBuilder.append(coordinate.toString());
+            stringBuilder.append(System.lineSeparator());
+        }
+
+        TextView txtResult = findViewById(R.id.txt_result);
+        txtResult.setMovementMethod(new ScrollingMovementMethod());
+        txtResult.setText(stringBuilder.toString());
+
 
         //save file
         saveRoute(route);
@@ -71,19 +82,11 @@ public class MainActivity extends AppCompatActivity {
         csvWriter.close();
     }
 
-    private void saveLatLng(Route route){
-        //todo: save epsg 4326
-    }
-
 
     private ArrayList<Trajectory> getTrajectories(){
         ArrayList<ArrayList<String>> array = Parser.parser(getApplicationContext()
                 , "trajectory/sample.txt", 1, ",");
         return Parser.makeTrajectories(array);
-    }
-
-    private void showGraph(){
-
     }
 
     private String createRootDir(){
