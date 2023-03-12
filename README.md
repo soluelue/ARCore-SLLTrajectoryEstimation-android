@@ -34,9 +34,7 @@ The image below is a graphical representation of route.txt.
 input column
 > index(time), qw, qx, qy, qz, tx, ty, tz
 <pre><code>
-/**
-@see <a href=https://github.com/google-ar/arcore-android-sdk/tree/master/samples/hello_ar_java</a>
-*/
+//@see https://github.com/google-ar/arcore-android-sdk/tree/master/samples/hello_ar_java
 @Override
 public void onDrawFrame(SampleRender render) {
     Frame frame;
@@ -67,4 +65,7 @@ public void onDrawFrame(SampleRender render) {
 
 result column
 > index(time), x, y, z
+
+
+
 x, y, z are relative coordinate.
