@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // save route.txt
-        String fileName = createRootDir() + "/route2.txt";
+        String fileName = createRootDir() + "/route.txt";
 
         CSVWriter csvWriter = new CSVWriter(fileName);
         for(Route.Coordinate coordinate: route.getRoute()){
@@ -88,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
 
     private String createRootDir(){
         //create root direcotry
-        String rooutPath = Environment.getExternalStorageDirectory().getPath() + "/SLLTrajectoryEstimation";
+        String rooutPath = Environment.getExternalStorageDirectory().getPath()
+                + "/SLLTrajectoryEstimation";
         File rootDir = new File(rooutPath);
         if(!rootDir.exists()){
             rootDir.mkdir();

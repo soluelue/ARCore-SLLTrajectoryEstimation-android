@@ -6,3 +6,6 @@ https://github.com/rfbr/PDR_with_Deep_Learning
 
 Using Matrix Calculator com.sll.estimation.mat
 https://github.com/apacha/sensor-fusion-demo
+
+result image
+<img src="./route.png"/>
